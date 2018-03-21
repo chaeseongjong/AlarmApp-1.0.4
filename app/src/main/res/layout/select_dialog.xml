@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="41dp"
+            android:fontFamily="@font/oseongandhaneumboldttf"
+            android:gravity="center"
+            android:text="@string/route"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:fontFamily="@font/oseongandhaneumboldttf"
+                android:id="@+id/btn_left"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:text="취소"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:fontFamily="@font/oseongandhaneumboldttf"
+                android:id="@+id/btn_right"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:backgroundTint="@color/blue"
+                android:text="확인" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

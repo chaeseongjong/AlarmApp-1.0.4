@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_white"
+    tools:context="com.chae_s_j.alarmapp.Activity.AlarmActivity">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/roundimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:srcCompat="@drawable/round" />
+
+    <TextView
+        android:id="@+id/statusNM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Stop watch"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintEnd_toEndOf="@+id/roundimage"
+        app:layout_constraintStart_toStartOf="@+id/roundimage" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/roundimage"
+        app:layout_constraintEnd_toEndOf="@+id/roundimage"
+        app:layout_constraintStart_toStartOf="@+id/roundimage"
+        app:layout_constraintTop_toTopOf="@+id/roundimage" />
+
+    <TextView
+        android:id="@+id/routeNM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oseongandhaneum"
+        android:text="서울 시립 도서관 "
+        android:textAlignment="center"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundimage" />
+
+    <TextView
+        android:id="@+id/KM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/oseongandhaneum"
+        android:text="km"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/status"
+        app:layout_constraintEnd_toEndOf="@+id/roundimage"
+        app:layout_constraintStart_toEndOf="@+id/status" />
+
+</android.support.constraint.ConstraintLayout>

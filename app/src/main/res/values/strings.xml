@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">다왔어</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="route">경로 명을 적어주세요.</string>
+    <string name="onPermissionDenied">권한을 수락하지 않으셨습니다.</string>
+    <string name="setDeniedMessage">시스템 설정에서 권한을 허용해 주세요.</string>
+    <string name="minute">몇분 뒤 깨워드릴까요?</string>
+</resources>
